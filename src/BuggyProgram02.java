@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class BuggyProgram02 {
     
-    public Scanner input = new Scanner(System.in);
+    public static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -33,7 +33,7 @@ public class BuggyProgram02 {
 
             System.out.println("Answer: " + answer);
 
-         else if(operation == 2) {
+        } else if(operation == 2) {
 
             answer = secondNum - firstNum;
 
@@ -64,7 +64,7 @@ public class BuggyProgram02 {
 
 
 
-    }
+
 
 
     /*
