@@ -1,9 +1,9 @@
-import java.io.Scanner;
+import java.util.Scanner;
 
-public class DebugProgram4 {
+public class BuggyProgram04_Fixed {
     
 
-    public static Scanner input = new Scanner(System.out);
+    public static Scanner input = new Scanner(System.in);
 
 
 
@@ -15,19 +15,19 @@ public class DebugProgram4 {
         System.out.print("Please enter the number you want to start counting down from: ");
         int num = input.nextInt();
 
-        System.out.println("Please enter the number you would like to stop counting down from: ");
+        System.out.print("Please enter the number you would like to stop counting down from: ");
         int stopNum = input.nextInt();
 
 
         int i = num;
         while(i >= stopNum) {
-            i++;
-            if(i >= 0) {
+            if(i <= stopNum) {
                 System.out.println(i);
             } else {
                 System.out.print(i + ", ");
             }
-        
+            i--;
+        }
         System.out.println("Finished counting down! Exiting...");
 
 

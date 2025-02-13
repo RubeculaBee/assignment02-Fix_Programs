@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class BuggyProgram02 {
+public class BuggyProgram02_Fixed {
     
-    public Scanner input = new Scanner(System.in);
+    public static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -21,7 +21,7 @@ public class BuggyProgram02 {
 
 
         System.out.print("Please input the first number: ");
-        int firstNum = input.nextDouble();
+        double firstNum = input.nextDouble();
 
         System.out.print("Please input the second number: ");
         double secondNum = input.nextDouble();
@@ -33,9 +33,9 @@ public class BuggyProgram02 {
 
             System.out.println("Answer: " + answer);
 
-         else if(operation == 2) {
+        } else if(operation == 2) {
 
-            answer = secondNum - firstNum;
+            answer = firstNum - secondNum;
 
             System.out.println("Answer: " + answer);
 
@@ -47,7 +47,7 @@ public class BuggyProgram02 {
 
         } else if(operation == 4) {
 
-            if(secondNum == 1) {
+            if(secondNum == 0) {
                 System.out.println("Cannot divide by 0");
             } else {
                 answer = firstNum / secondNum;
@@ -59,12 +59,12 @@ public class BuggyProgram02 {
 
             System.out.println("Not a valid operation! Exiting...");
 
-        }
-        }
-
-
-
     }
+}
+
+
+
+
 
 
     /*
@@ -162,4 +162,4 @@ public class BuggyProgram02 {
 
      */
 
-}
+
