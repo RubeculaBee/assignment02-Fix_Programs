@@ -1,9 +1,9 @@
-import java.io.Scanner;
+import java.util.Scanner;
 
-public class DebugProgram4 {
+public class BuggyProgram04 {
     
 
-    public static Scanner input = new Scanner(System.out);
+    public static Scanner input = new Scanner(System.in);
 
 
 
@@ -27,7 +27,7 @@ public class DebugProgram4 {
             } else {
                 System.out.print(i + ", ");
             }
-        
+        }
         System.out.println("Finished counting down! Exiting...");
 
 
